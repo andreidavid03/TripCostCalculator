@@ -1,0 +1,84 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #2c3e50, #4ca1af);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1 {
+    color: #ecf0f1; /* Light grey color for the heading */
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; /* Add shadow to make it more visible */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ecf0f1; /* Light grey color for the labels */
+    text-shadow: 1px 1px 2px #000000; /* Add shadow to make it more visible */
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2980b9; /* Blue color for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db; /* Lighter blue color for hover */
+}
+
+.hidden {
+    display: none;
+}
+
+pre {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#results {
+    margin-top: 20px;
+    background-color: #2980b9; /* Dark grey color for results */
+    padding: 20px;
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#resultsText {
+    color: #000000; /* Light grey color for the results text */
+    text-shadow: 1px 1px 2px #000000; /* Add shadow to make it more visible */
+    font-size: 1.2em; /* Increase font size for better visibility */
+}

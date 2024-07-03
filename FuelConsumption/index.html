@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Trip Cost Calculator 🚗</h1>
+    <div id="calculatorSection">
+        <label for="fuelCapacity">Enter fuel tank capacity (litres):</label>
+        <input type="number" id="fuelCapacity" />
+
+        <label for="totalDistance">Enter total distance to travel (km):</label>
+        <input type="number" id="totalDistance" />
+
+        <label for="startingRange">Enter starting range of the car (km):</label>
+        <input type="number" id="startingRange" />
+
+        <label for="consumptionRate">Enter fuel consumption rate (litres per 100 km):</label>
+        <input type="number" id="consumptionRate" />
+
+        <label for="costPerLitre">Enter cost per litre of fuel:</label>
+        <input type="number" id="costPerLitre" />
+
+        <button onclick="calculateTrip()">Calculate 🧮</button>
+
+        <div id="results" class="hidden">
+            <h2>Trip Details 📝</h2>
+            <pre id="resultsText"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
